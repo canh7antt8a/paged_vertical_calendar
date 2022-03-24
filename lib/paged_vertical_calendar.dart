@@ -231,6 +231,7 @@ class _PagedVerticalCalendarState extends State<PagedVerticalCalendar> {
   @override
   Widget build(BuildContext context) {
     return Scrollable(
+      controller: widget.scrollController,
       viewportBuilder: (BuildContext context, ViewportOffset position) {
         return Viewport(
           offset: position,
